@@ -1,0 +1,12 @@
+.clients {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .client {
+            margin: 25px 17px 0 17px;
+        }
+    }
+}

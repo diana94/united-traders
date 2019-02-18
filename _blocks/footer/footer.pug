@@ -1,0 +1,39 @@
+footer.footer
+
+    .container
+
+        .footer__content
+
+            ul.footer-menu
+                -
+                    var links = ['PRIVACY POLICY', 'ABOUT US', 'SUPPORT']
+                    
+                each item in links
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#")= item
+                        
+            .social-networks.footer__social-networks
+                -
+                    var socialNetworks = [
+                        {
+                            id: '#facebook',
+                            width: '16'
+                        },
+                        {
+                            id: '#twitter',
+                            width: '30'
+                        },
+                        {
+                            id: '#insta',
+                            width: '32'
+                        }
+                    ]
+                    
+                each item in socialNetworks
+                    a(href="#").social-network
+                        svg.social-network__img(width= item.width)
+                            use(xlink:href= item.id)
+                        
+            p.footer__copyright Copright &#169; 1999 - 2019
+            
+<!-- End footer block-->

@@ -1,0 +1,40 @@
+section.clients.page-section
+
+    .container
+    
+        h2.page-title Wordlwide recognition
+        
+        p.page-dscr Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est.
+
+        p.page-dscr Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed nisi. Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio, eu commodo nisi vehicula ut. Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus non imperdiet ex.
+        
+        .clients__list
+        
+            -
+                var clients = [
+                    {
+                        imgSrc: 'images/clients/clients1.png',
+                        imgWidth: '93'
+                    },
+                    {
+                        imgSrc: 'images/clients/clients2.png',
+                        imgWidth: '94'
+                    },
+                    {
+                        imgSrc: 'images/clients/clients3.png',
+                        imgWidth: '94'
+                    },
+                    {
+                        imgSrc: 'images/clients/clients4.png',
+                        imgWidth: '102'
+                    },
+                    {
+                        imgSrc: 'images/clients/clients5.png',
+                        imgWidth: '190'
+                    }
+                ]
+                
+            each item in clients
+                img.client(src= item.imgSrc, width= item.imgWidth)
+                
+<!-- End clients block-->

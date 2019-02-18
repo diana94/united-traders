@@ -1,0 +1,28 @@
+.page {
+    &-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: $text-color-2;
+    }
+
+    &-dscr {
+        margin-top: 30px;
+        font-size: 16px;
+
+        & + .page-dscr {
+            margin-top: 22px;
+        }
+    }
+
+    &-section {
+        & + .page-section {
+            margin-top: 80px;
+        }
+    }
+
+    &-content {
+        display: block;
+        padding: 80px 0 120px;
+    }
+}

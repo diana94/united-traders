@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title United Traders
+        
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Sans:400,700", rel="stylesheet")
+
+        link(rel="stylesheet", href="stylesheets/bootstrap/bootstrap-grid.min.css")
+        link(rel="stylesheet", href="stylesheets/index/index.min.css")
+
+    body
+        include ../../_blocks/svg/svg.html
+        include ../../_blocks/header/header.pug
+        include ../../_blocks/hero/hero.pug
+        
+        main.page-content
+            include ../../_blocks/services/services.pug
+            include ../../_blocks/benefits/benefits.pug
+            include ../../_blocks/clients/clients.pug
+            
+        include ../../_blocks/footer/footer.pug
+        
+        script(src="scripts/plugins/jquery/jquery-3.3.1.min.js")
+        script(src="scripts/script.js")

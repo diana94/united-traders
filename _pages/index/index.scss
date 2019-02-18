@@ -1,0 +1,21 @@
+//Base
+@import "../../_blocks/vars-color/vars-color";
+@import "../../_blocks/vars-media/vars-media";
+@import "../../_blocks/root/root";
+@import "../../_blocks/normalize/normalize";
+@import "../../_blocks/reset/reset";
+@import "../../_blocks/page/page";
+@import "../../_blocks/mixins/mixins";
+
+//Blocks
+@import "../../_blocks/header/header";
+@import "../../_blocks/hero/hero";
+@import "../../_blocks/services/services";
+@import "../../_blocks/benefits/benefits";
+@import "../../_blocks/clients/clients";
+@import "../../_blocks/footer/footer";
+
+//Elements
+@import "../../_blocks/button/button";
+@import "../../_blocks/social-networks/social-networks";
+@import "../../_blocks/burger/burger";

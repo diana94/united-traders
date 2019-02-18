@@ -1,0 +1,58 @@
+header.header
+
+    .container
+    
+        .header__content
+
+            a.logo.header__logo(href="#")
+                img(src="images/logo/logo.png")
+                
+            button.burger.header__burger(id="header-burger")
+                span
+                span
+                span
+                span
+                
+            .header__toggle-part
+                
+                ul.header-menu
+
+                    -
+                        var links = [
+                            {
+                                title: 'Products',
+                                isSubMenu: true,
+                                subMenu: ['Product1', 'Product2', 'Product3']
+                            },
+                            {
+                                title: 'News & Events'
+                            },
+                            {
+                                title: 'Support'
+                            },
+                            {
+                                title: 'Contacts'
+                            }
+                        ]
+                        
+                    each item in links
+                        if !item.isSubMenu
+                            li.header-menu__item
+                                a(href="#").header-menu__link= item.title
+                                
+                        else
+                            li.header-menu__item.header-menu__item_dropdown
+                                button.header-menu__dropdown-button
+                                    | #{item.title}
+                                    svg.icon
+                                        use(xlink:href="#arrow-down")
+                                ul.header-submenu
+                                    each point in item.subMenu
+                                        li.header-submenu__item
+                                            a.header-menu__link(href="#")= point
+                                            
+                .header__actions
+                    button.header__action(type="button") Login
+                    button.header__action(type="button") Buy Now
+                    
+<!-- End header block-->

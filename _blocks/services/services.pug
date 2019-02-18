@@ -1,0 +1,39 @@
+section.services.page-section
+
+    .container
+
+        h2.page-title Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+        
+        .services__list
+        
+            -
+                var services = [
+                    {
+                        imgSrc: 'images/services/services1.png',
+                        title: 'Donec efficitur molestie',
+                        dscr: 'Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.',
+                        imgWidth: '52'
+                    },
+                    {
+                        imgSrc: 'images/services/services2.png',
+                        title: 'Mauris interdum venenatis',
+                        dscr: 'Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis, quis elementum nisi egestas eget.',
+                        imgWidth: '62'
+                    },
+                    {
+                        imgSrc: 'images/services/services3.png',
+                        title: 'Cras sit amet',
+                        dscr: 'Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.',
+                        imgWidth: '64'
+                    }
+                ]
+                
+            each item in services
+                .service
+                    .service__img-wrapper
+                        img.service__img(src= item.imgSrc, width= item.imgWidth)
+                    h3.service__title.page-title= item.title
+                    p.service__dscr= item.dscr
+                    a.service__link(href="#") Learn more
+                    
+<!-- End services block-->

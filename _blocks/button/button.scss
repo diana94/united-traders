@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 230px;
+    padding: 18px 20px 19px;
+    background: none;
+    border: 1px solid #85B657;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+    color: $text-color-2;
+    text-decoration: none;
+
+    &:hover {
+        background: #85B657;
+        color: $text-color-1;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 1px 1px 5px rgba(155, 181, 160, 0.5)
+    }
+}

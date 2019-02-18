@@ -1,0 +1,11 @@
+:root {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $text-color-2;
+}
